@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+  <?php 
+  $cars = array
+  (
+  array("Volvo",22,18),
+  array("BMW",15,13),
+  array("Saab",5,2),
+  array("Land Rover",17,15)
+  );
+  
+  for ($row = 0; $row < 4; $row++) {
+  echo "<p><b>Row number $row</b></p>";
+  echo "<ul>";
+  for ($col = 0; $col < 3; $col++) {
+    echo "<li>".$cars[$row][$col]."</li>";
+  }
+  echo "</ul>";
+}
+  ?>
+  
+  <!-- script> 
+    function welcome(){
+	var name = document.forms['my-id'].un.value;
+	var age = document.forms['my-id'].age.value;
+	if(name == null && age == null){
+	document.write("empty field!");
+	}
+	document.write("Welcome " + name +" Your age is " + age);
+	}
+  </script -->
+  <style type="text/css">
+
+  h1 em{ color: blue;}
+  p input{
+  
+    background-color:yellow;
+  }
+  
+  </style>
+  </head>
+  <body>
+  
+     <form id="my-id" >
+	  <p>name:<input type ="text" id = "un" name ="Uname" value ="" required/></p>
+	  <p>Age:<input type ="text" id = "age" name ="Age" value ="" required/></p>
+	  <input type ="submit" value ="submit" onclick="welcome();"/></p>
+	 
+	 </form>
+	 <h1>This headline is <em>very</em> important</h1>
+  </body>
+</html>

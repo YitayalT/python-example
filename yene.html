@@ -1,0 +1,34 @@
+<html>
+<!–- js02.html -->
+<head>
+<title>Data Types and Variables</title>
+<script type="text/javascript"
+src="random.js">
+</script>
+
+</head>
+<body>
+<div style="text-align: center">
+<script type="text/javascript">
+roll1 = randomInt(1, 6);
+roll2 = randomInt(1, 6);
+document.write(roll1);
+document.write("&nbsp;&nbsp;");
+document.write(roll2);
+</script>
+</div>
+
+<script type="text/javascript">
+var userName = prompt("What is your name?", "");
+var userAge = prompt("Your age?", "");
+var userAge = parseFloat(userAge);
+document.write("Hello " + userName + ".");
+if (userAge < 18) {
+document.write(" Do your parents know you are online?");
+}
+else {
+document.write(" Welcome friend!");
+}
+</script>
+</body>
+</html>
